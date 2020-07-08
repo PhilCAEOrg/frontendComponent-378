@@ -42,10 +42,10 @@ var init = function() {
 
   client = new Las2peerWidgetLibrary("$Microservice_Url$/todo", iwcCallback, '*'); 
  
-  var p = document.getElementById("");
+  var p = document.getElementById("p_8b2f7");
 
   client.sendRequest("GET", "todo", "", "", {}, false, function(data, type) { 
- 
+     p.value = data;
 }, function(error) {});
 
 };
